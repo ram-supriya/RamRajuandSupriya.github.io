@@ -14,6 +14,7 @@ export class MainPageComponent implements OnInit {
   hours: any;
   minutes: any;
   seconds: any;
+  showMessage: any;
 
   constructor() { }
 
@@ -28,11 +29,10 @@ export class MainPageComponent implements OnInit {
     this.hours = Math.floor((this.distances % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     this.minutes = Math.floor((this.distances % (1000 * 60 * 60)) / (1000 * 60));
     this.seconds = Math.floor((this.distances % (1000 * 60)) / 1000);
-    // if (distance < 0) {
-    //   clearInterval(x);
-    //   // document.getElementById("demo").innerHTML = "EXPIRED";
-    // }
-    console.log(this.days)
+    this.showMessage = false;
+    if(this.distances < 1) {
+      this.showMessage = true;
+    }
   }
   
 
