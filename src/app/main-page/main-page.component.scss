@@ -17,8 +17,17 @@ $font: 'Questrial', sans-serif;
   width: 100%;
 }
 .boxes {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  -webkit-box-flex: 0;
+  flex: 0 0 auto;
+  max-width: 100%;
+  z-index: 10;
   padding: 0;
 }
+
+
 .small-buttons {
     margin: 0;
     padding: 0;
@@ -27,13 +36,7 @@ $font: 'Questrial', sans-serif;
   -webkit-box-pack: center !important;
   justify-content: center !important;
 }
-.boxes {
-  -webkit-box-flex: 0;
-  flex: 0 0 auto;
-  max-width: 100%;
-  position: sticky;
-  top: 0;
-}
+
 .d-sm-flex {
   display: flex !important;
 }
