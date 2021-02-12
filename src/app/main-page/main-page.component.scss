@@ -17,17 +17,8 @@ $font: 'Questrial', sans-serif;
   width: 100%;
 }
 .boxes {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  -webkit-box-flex: 0;
-  flex: 0 0 auto;
-  max-width: 100%;
-  z-index: 10;
   padding: 0;
 }
-
-
 .small-buttons {
     margin: 0;
     padding: 0;
@@ -36,7 +27,15 @@ $font: 'Questrial', sans-serif;
   -webkit-box-pack: center !important;
   justify-content: center !important;
 }
-
+.boxes {
+  -webkit-box-flex: 0;
+  flex: 0 0 auto;
+  max-width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  margin-top: -1px;
+}
 .d-sm-flex {
   display: flex !important;
 }
@@ -110,9 +109,15 @@ $font: 'Questrial', sans-serif;
     display: block;
   }
   .groomnames {
-    margin: 0;
+    margin: 0 auto;
     background-color: #aa3f48;
     height: 100%;
+    text-align: center;
+  }
+  .groomnames1 {
+    background-color: #aa3f48;
+    height: 100%;
+    text-align: center;
   }
 
 // flip images codes
@@ -132,7 +137,7 @@ $font: 'Questrial', sans-serif;
     z-index: 1;
     // float: left;
     perspective: 1000px;
-    margin-top: 10%;
+    margin-top: 7%;
   }
   
   img {
@@ -177,7 +182,7 @@ $font: 'Questrial', sans-serif;
     padding: 10px;
     text-align: center;
     // opacity: .7;
-    background: $white;
+    background: #c4862f;
   
   }
   .back1 {
@@ -198,13 +203,14 @@ $font: 'Questrial', sans-serif;
   h1 {
     font-size: 30px;
     padding-top: 15px;
-    color: $rose;
+    color: white;
   }
   
   // p {
   //   font-size: 20px;
   // }
   .artist {
+    color: white;
     font-size: 20px;
   }
   
@@ -261,11 +267,22 @@ $font: 'Questrial', sans-serif;
     padding-left: 7px !important;
     padding-top: 15px !important;
   }
+  @media (min-width: 340px) and (max-width: 360px){
+    .pelliphoto {
+      height: 550px;
+      width: 97%;
+    }
+
+  }
 }
 @media (min-width: 361px) and (max-width: 410px) {
   // .d-sm-flex {
   //   display: inline-block !important;
   // }
+  .pelliphoto {
+    height: 560px;
+    width: 90%;
+  }
   .first-button {
     display: inline;
   }
@@ -304,7 +321,7 @@ $font: 'Questrial', sans-serif;
     display: block;
   }
 }
-@media (min-width: 411px) and (max-width: 460px) {
+@media (min-width: 410px) and (max-width: 460px) {
   // .d-sm-flex {
   //   display: inline-block !important;
   // }
@@ -342,6 +359,10 @@ $font: 'Questrial', sans-serif;
     padding-left: 7px !important;
     padding-top: 15px !important;
   }
+  .pelliphoto {
+    height: 570px;
+    width: 82%;
+  }
   @media (min-width: 419px) and (max-width: 443px) {
     .days {
       display: block;
@@ -373,6 +394,10 @@ $font: 'Questrial', sans-serif;
   // .d-sm-flex {
   //   display: inline-block !important;
   // }
+  .pelliphoto {
+    height: 570px;
+    width: 78%;
+  }
   .first-button {
     display: inline;
   }
@@ -431,20 +456,11 @@ $font: 'Questrial', sans-serif;
       display: block;
       // padding-left: 5px !important;
     }
+    .pelliphoto {
+      height: 570px;
+      width: 70%;
+    }
   }
-  // @media (min-width: 444px) and (max-width: 460px) {
-  //   .days {
-  //     display: block;
-  //     // padding-left: 5px !important;
-  //   }
-  //   .hours {
-  //     display: block;
-  //     // padding-left: 6px !important;
-  //   }
-  //   .hoursleft {
-  //     margin-left: -13px;
-  //   }
-  // }
 }
 @media (min-width: 541px) and (max-width: 700px) {
   // .d-sm-flex {
@@ -484,11 +500,28 @@ $font: 'Questrial', sans-serif;
   .seconds {
     display: block;
   }
-
+  @media (min-width:541px) and (max-width: 600px) {
+    .pelliphoto {
+      height: 570px;
+      width: 68%;
+    }
+  }
+  @media (min-width:601px) and (max-width: 651px) {
+    .pelliphoto {
+      height: 570px;
+      width: 60%;
+    }
+  }
+  @media (min-width:651px) and (max-width: 700px) {
+    .pelliphoto {
+      height: 570px;
+      width: 58%;
+    }
+  }
 
 }
 
-@media (min-width: 701px) and (max-width: 767px) {
+@media (min-width: 701px) and (max-width: 768px) {
   .first-button {
     display: inline;
   }
@@ -510,10 +543,24 @@ $font: 'Questrial', sans-serif;
     padding-top: 15px !important;
   }
   .minutes {
+    display: block;
     margin-left: -7px;
   }
   .seconds {
+    display: block;
     margin-left: -7px;
+  }
+  .pelliphoto {
+    height: 570px;
+    width: 55%;
+  }
+  .days {
+    display: block;
+    // padding-left: 5px !important;
+  }
+  .hours {
+    display: block;
+    // padding-left: 5px !important;
   }
 }
 @media (min-width: 768px) and (max-width: 860px) {
@@ -523,36 +570,284 @@ $font: 'Questrial', sans-serif;
   .move {
     font-size: 25px;
   }
+  .pelliphoto {
+    height: 570px;
+    width: 48%;
+  }
+  .minutes {
+    display: block;
+    // margin-left: -7px;
+  }
+  .seconds {
+    display: block;
+    // margin-left: -7px;
+  }
+  .days {
+    display: block;
+    // padding-left: 5px !important;
+  }
+  .hours {
+    display: block;
+    // padding-left: 5px !important;
+  }
+  
+  @media (min-width: 800px) and (max-width: 860px) {
+    .pelliphoto {
+      height: 570px;
+      width: 44%;
+    }
+  }
+}
+@media (min-width: 861px) and (max-width: 900px) {
+  .pelliphoto {
+    height: 570px;
+    width: 41%;
+  }
+  .minutes {
+    display: block;
+    // margin-left: -7px;
+  }
+  .seconds {
+    display: block;
+    // margin-left: -7px;
+  }
+  .days {
+    display: block;
+    // padding-left: 5px !important;
+  }
+  .hours {
+    display: block;
+    // padding-left: 5px !important;
+  }
+}
+@media (min-width: 901px) and (max-width: 951px) {
+  .pelliphoto {
+    height: 610px;
+    width: 39%;
+  }
+  .minutes {
+    display: block;
+    // margin-left: -7px;
+  }
+  .seconds {
+    display: block;
+    // margin-left: -7px;
+  }
+  .days {
+    display: block;
+    // padding-left: 5px !important;
+  }
+  .hours {
+    display: block;
+    // padding-left: 5px !important;
+  }
+}
+@media (min-width: 951px) and (max-width: 1000px) {
+  .pelliphoto {
+    height: 610px;
+    width: 37%;
+  }
+  .minutes {
+    display: block;
+    // margin-left: -7px;
+  }
+  .seconds {
+    display: block;
+    // margin-left: -7px;
+  }
+  .days {
+    display: block;
+    // padding-left: 5px !important;
+  }
+  .hours {
+    display: block;
+    // padding-left: 5px !important;
+  }
+}
+@media (min-width: 1001px) and (max-width: 1050px) {
+  .pelliphoto {
+    height: 610px;
+    width: 35%;
+  }
+  .minutes {
+    display: block;
+    // margin-left: -7px;
+  }
+  .seconds {
+    display: block;
+    // margin-left: -7px;
+  }
+  .days {
+    display: block;
+    // padding-left: 5px !important;
+  }
+  .hours {
+    display: block;
+    // padding-left: 5px !important;
+  }
+}
+@media (min-width: 1050px) and (max-width: 1100px) {
+  .pelliphoto {
+    height: 610px;
+    width: 34%;
+  }
+  .minutes {
+    display: block;
+    // margin-left: -7px;
+  }
+  .seconds {
+    display: block;
+    // margin-left: -7px;
+  }
+  .days {
+    display: block;
+    // padding-left: 5px !important;
+  }
+  .hours {
+    display: block;
+    // padding-left: 5px !important;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1150px) {
+  .pelliphoto {
+    height: 610px;
+    width: 33%;
+  }
+  .minutes {
+    display: block;
+    // margin-left: -7px;
+  }
+  .seconds {
+    display: block;
+    // margin-left: -7px;
+  }
+  .days {
+    display: block;
+    // padding-left: 5px !important;
+  }
+  .hours {
+    display: block;
+    // padding-left: 5px !important;
+  }
+}
+@media (min-width: 1150px) and (max-width: 1200px) {
+  .pelliphoto {
+    height: 610px;
+    width: 32%;
+  }
+  .minutes {
+    display: block;
+    // margin-left: -7px;
+  }
+  .seconds {
+    display: block;
+    // margin-left: -7px;
+  }
+  .days {
+    display: block;
+    // padding-left: 5px !important;
+  }
+  .hours {
+    display: block;
+    // padding-left: 5px !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1250px) {
+  .pelliphoto {
+    height: 610px;
+    width: 31.5%;
+  }
+  .minutes {
+    display: block;
+    // margin-left: -7px;
+  }
+  .seconds {
+    display: block;
+    // margin-left: -7px;
+  }
+  .days {
+    display: block;
+    // padding-left: 5px !important;
+  }
+  .hours {
+    display: block;
+    // padding-left: 5px !important;
+  }
+}
+@media (min-width: 1250px) and (max-width: 1300px) {
+  .pelliphoto {
+    height: 650px;
+    width: 31%;
+  }
+  .minutes {
+    display: block;
+    // margin-left: -7px;
+  }
+  .seconds {
+    display: block;
+    // margin-left: -7px;
+  }
+  .days {
+    display: block;
+    // padding-left: 5px !important;
+  }
+  .hours {
+    display: block;
+    // padding-left: 5px !important;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .pelliphoto {
+    height: 650px;
+    width: 31%;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1500px) {
+  .pelliphoto {
+    height: 700px;
+    width: 30%;
+  }
+}
+@media (min-width: 1500px) and (max-width: 1600px) {
+  .pelliphoto {
+    height: 700px;
+    width: 29.5%;
+  }
+}
+@media (min-width: 1600px) and (max-width: 1700px) {
+  .pelliphoto {
+    height: 750px;
+    width: 29.5%;
+  }
+}
+@media (min-width: 1700px) and (max-width: 1800px) {
+  .pelliphoto {
+    height: 750px;
+    width: 29%;
+  }
+}
+@media (min-width: 1800px) and (max-width: 1921px) {
+  .pelliphoto {
+    height: 750px;
+    width: 29%;
+  }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (min-width: 1921px) {
+  .pelliphoto {
+    height: 750px;
+    width: 29%;
+  }
+}
+@media (min-width: 421px) and (max-width: 767px) {
+  .groomnames1 {
+    padding-top: 20px;
+    margin-top: -2px;
+  }
+}
+@media (min-width: 768px) {
+  .groomnames1 {
+    padding-top: 50px;
+    margin-top: -1px;
+  }
+}
