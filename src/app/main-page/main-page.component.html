@@ -6,35 +6,33 @@
         <div class="background-image1">
             <img src="../../assets/Web_page1.jpg" class="image1">
         </div>
-
-          <div class="col-md-12 boxes" *ngIf="!showMessage">
-            <div class="first-button d-sm-flex">
-              <div class="button1 savebutton">
-                <h3 class="w-100 time2">
-                  Save <span class="savedate">The Day</span>
-                </h3>
-              </div>
-              <div class="button1 move ">
-                {{days}} <span class="days">Days</span>
-              </div>
-              <div class="button1 move hoursleft">
-                {{hours}} <span class="hours">Hours</span>
-              </div>
-              <div class="button1 move">
-                {{minutes}} <span class="minutes">Minutes</span>
-              </div>
-              <div class="button1 move">
-                {{seconds}} <span class="seconds">Seconds</span>
-              </div>
-              
-            </div>
-          </div>
-          <div class="col-md-12 boxes" *ngIf="showMessage">
-            They got Engaged....
-          </div> 
-
     </div>
-
+    <div class="col-md-12 boxes" *ngIf="!showMessage">
+      <div class="first-button d-sm-flex">
+        <div class="button1 savebutton">
+          <h3 class="w-100 time2">
+            Save <span class="savedate">The Day</span>
+          </h3>
+        </div>
+        <div class="button1 move ">
+          {{days}} <span class="days">Days</span>
+        </div>
+        <div class="button1 move hoursleft">
+          {{hours}} <span class="hours">Hours</span>
+        </div>
+        <div class="button1 move">
+          {{minutes}} <span class="minutes">Minutes</span>
+        </div>
+        <div class="button1 move">
+          {{seconds}} <span class="seconds">Seconds</span>
+        </div>
+        
+      </div>
+    </div>
+    <div class="col-md-12 boxes" *ngIf="showMessage">
+      They got Engaged....
+    </div>
+    <!-- <div style="margin-top: 1000px;"></div> -->
     <div class="col-12 row groomnames">
       <div class="box col-lg-6 col-md-6 col-sm-12 col-xs-12 ramraju">
         <div id="card-container">
@@ -61,7 +59,7 @@
             <p class="clickimage" >Click the image</p>
           </div>
           <div class="back face">
-            <h1>RamBabu</h1>
+            <h1>RamRaju</h1>
             <p class="artist">Software</p>
             <p class="date">2015</p>
           </div>
@@ -71,7 +69,7 @@
     
       </div>
     </div>
-    <div class="col-12 groomnames">
+    <div class="col-12 groomnames1">
       <img class="pelliphoto" src="../../assets/Time_line.jpg">
     </div>
 </div>
