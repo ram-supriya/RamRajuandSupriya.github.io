@@ -279,6 +279,7 @@ $font: 'Questrial', sans-serif;
   // .d-sm-flex {
   //   display: inline-block !important;
   // }
+
   .pelliphoto {
     height: 560px;
     width: 90%;
@@ -320,6 +321,13 @@ $font: 'Questrial', sans-serif;
   .seconds {
     display: block;
   }
+  @media (min-width: 392px) and (max-width: 394px) {
+    .pelliphoto {
+      height: 560px;
+      width: 100% !important;
+    }
+  }
+
 }
 @media (min-width: 410px) and (max-width: 460px) {
   // .d-sm-flex {
@@ -362,6 +370,12 @@ $font: 'Questrial', sans-serif;
   .pelliphoto {
     height: 570px;
     width: 82%;
+  }
+  @media (min-width: 412px) and (max-width: 415px) {
+    .pelliphoto {
+      height: 600px;
+      width: 100%;
+    }
   }
   @media (min-width: 419px) and (max-width: 443px) {
     .days {
