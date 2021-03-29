@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainPageComponent implements OnInit {
 
-  countDownDate = new Date("May 27, 2021 01:45:00").getTime();
+  countDownDate = new Date("May 27, 2021 01:47:00").getTime();
   now: any;
   distances: any;
   days: any;
@@ -19,7 +19,7 @@ export class MainPageComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    setInterval(() => this.settime(),100);
+    setInterval(() => this.settime(), 100);
   }
 
   settime() {
@@ -30,10 +30,10 @@ export class MainPageComponent implements OnInit {
     this.minutes = Math.floor((this.distances % (1000 * 60 * 60)) / (1000 * 60));
     this.seconds = Math.floor((this.distances % (1000 * 60)) / 1000);
     this.showMessage = false;
-    if(this.distances < 1) {
+    if (this.distances < 1) {
       this.showMessage = true;
     }
   }
-  
+
 
 }
