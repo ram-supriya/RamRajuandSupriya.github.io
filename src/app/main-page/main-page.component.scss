@@ -70,7 +70,7 @@ $font: 'Questrial', sans-serif;
   text-align: center;
   font-size: large;
   background-color: #aa3f48;
-  color: #ffffff;
+  color: #fce705;
   font-family: Georgia, 'Times New Roman', Times, serif;
   line-height: 1.5;
   // background-image: linear-gradient(315deg, #982630 0%, #9b444a 54%, #9c3038 100%);
@@ -78,8 +78,13 @@ $font: 'Questrial', sans-serif;
 
 .video {
   text-align: center;
-  width: auto;
-  height: 100%
+  // width: 100%;
+  // height: 300px;
+}
+.finaltext {
+  background: #982630;
+  text-align: center;
+  margin-top: -2px;
 }
 .savebutton {
   background: #982630;
