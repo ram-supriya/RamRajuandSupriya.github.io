@@ -97,6 +97,65 @@
         allowfullscreen></iframe>
     </div>
   </div>
+
+
+  <div class="col-12 piggame row">
+    <div class="col-12 game">
+      Just play a Pig Game<p style="margin: 0;font-size: 12px;margin-top: 10px;">reach 100 to win</p>
+    </div>
+    <div class="col-6" [ngClass]="(this.players == true)? 'active left' : 'inactive left' ">
+      <div class="playername">Player 1</div>
+      <!-- <div class="space"></div> -->
+      <div class="finalscore">
+        {{scores[0]}}
+      </div>
+      <!-- <div class="space"></div> -->
+      <div class="current">
+        <div class="currentscore">
+          {{player1score}}
+        </div>
+      </div>
+      <!-- <div class="space"></div> -->
+    </div>
+    <div class="col-6 right" [ngClass]="(this.players == false)? 'active right' : 'inactive right' ">
+      <div class="playername">Player 2</div>
+      <!-- <div class="space"></div> -->
+      <div class="finalscore">
+        {{scores[1]}}
+      </div>
+      <!-- <div class="space"></div> -->
+      <div class="current">
+        <div class="currentscore">
+          {{player2score}}
+        </div>
+      </div>
+    </div>
+    <div class="col-12 space"></div>
+    <div class="buttons">
+      <div class="dic">
+        <img [src]="img" alt="Playing dice" class="dice" *ngIf="displaydice">
+      </div>
+      <div style="margin-top:20px"></div>
+      <div class="col-12" (click)="rooldice()">
+        <button class="roll">Roll</button>
+      </div>
+      <div style="margin-top:20px"></div>
+      <div class="col-12 row" style="margin: 0;">
+        <div class="col-6" (click)="hold()" style="text-align: center;">
+          <button class="hold">Hold</button>
+        </div>
+        <div class="col-6" (click)="reset()" style="text-align: center;">
+          <button class="newgame">New Game</button>
+        </div>
+
+      </div>
+      <div style="margin-top:20px"></div>
+      <!-- <div class="col-12">
+
+      </div> -->
+    </div>
+
+  </div>
   <div class="text">
     <p class="finaltext">Thank You ❤</p>
   </div>
