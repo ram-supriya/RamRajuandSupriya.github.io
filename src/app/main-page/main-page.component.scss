@@ -15,6 +15,7 @@ $font: 'Questrial', sans-serif;
 .card {
   height: auto;
   width: 100%;
+  background-color: #aa3f48;
 }
 .boxes {
   padding: 0;
@@ -1072,4 +1073,124 @@ $font: 'Questrial', sans-serif;
     padding-top: 50px;
     margin-top: -1px;
   }
+}
+
+.piggame {
+  margin: 0;
+  padding: 10px;
+  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+}
+
+.playername {
+  text-align: center;
+  color: black;
+  font-size: 18px;
+  // font-weight: bold;
+  padding: 10px;
+  
+}
+.active {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.left {
+  text-align: center;
+  font-size: 18px;
+  color: black;
+  // background-color: chocolate;
+  padding-bottom: 20px;
+  transition: all 0.75s;
+}
+.right {
+  text-align: center;
+  font-size: 18px;
+  color: black;
+  padding-bottom: 20px;
+  transition: all 0.75s;
+  // background-color: chocolate;
+}
+.space {
+  margin-top: 10px;
+}
+.finalscore {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 24px;
+}
+
+.current {
+  height: auto;
+  width: auto;
+  background-color: red;
+  padding: 20px;
+  text-align: center;
+}
+.currentscore {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+.buttons {
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  text-align: center;
+  width: -webkit-fill-available;
+}
+.newgame {
+  border: none;
+  padding: 10px;
+  text-align: center;
+  color: black;
+  background-color: white;
+  font-weight: bold;
+  border: 1px solid #D0B2AF;
+  border-radius: 30px;
+  width: 110px;
+  outline: none;
+}
+
+.roll {
+  border: none;
+  padding: 10px;
+  text-align: center;
+  color: black;
+  background-color: white;
+  font-weight: bold;
+  border: 1px solid #D0B2AF;
+  border-radius: 30px;
+  width: 110px;
+  outline: none;
+}
+
+.hold {
+  border: none;
+  padding: 10px;
+  text-align: center;
+  color: black;
+  background-color: white;
+  font-weight: bold;
+  border: 1px solid #D0B2AF;
+  border-radius: 30px;
+  width: 110px;
+  outline: none;
+}
+
+.dic {
+  height: 60px;
+  width: 60px;
+  margin: 0 auto;
+}
+.dice {
+  height: 100%;
+  width: 100%;
+}
+.game {
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
