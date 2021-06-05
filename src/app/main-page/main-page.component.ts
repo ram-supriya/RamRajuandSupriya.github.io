@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainPageComponent implements OnInit {
 
-  countDownDate = new Date("May 27, 2021 01:47:00").getTime();
+  countDownDate = new Date("June 19, 2021 23:33:00").getTime();
   now: any;
   distances: any;
   days: any;
@@ -89,6 +89,6 @@ export class MainPageComponent implements OnInit {
       this.showMessage = true;
     }
   }
-
+  // C:\Users\HARISH\AppData\Local\Programs\Microsoft VS Code\bin  
 
 }
